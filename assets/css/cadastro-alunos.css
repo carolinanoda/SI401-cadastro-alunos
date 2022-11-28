@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "Intrepid";
+  src: url(./../fonts/intrepid.ttf);
+}
+
+@font-face {
+  font-family: "Aileron";
+  src: url(./../fonts/aileron.regular.otf);
+}
+
+.item1 { grid-area: 1 / 2 / 2 / 6; }
+.item2 { grid-area: 1 / 1 / 6 / 2; }
+.item3 { grid-area: 2 / 2 / 5 / 6; }
+.item4 { grid-area: 5 / 2 / 6 / 6; }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: aliceblue;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    height: 100vh;
+  }
+
+  .item1 {
+    background-color: #385170;
+    border-bottom: 2px solid aliceblue;
+    height: 15vh;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Aileron';
+    font-size: 30px;
+  }
+
+  .item2 {
+    padding: 5vh 0 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #2193b0;
+    font-family: 'Aileron';
+  }
+  
+  .menu {
+    padding: 0 0 5vh 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-icon {
+    width: 5vh;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
+  .menu > h3 {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 1vh;
+  }
+
+  .sign-up {
+    padding: 0 0 5vh 0;
+  }
+
+  .sign-up-icon {
+    width: 7vh;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
+  .list-icon {
+    width: 5vh;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
+  a:link, a:visited {
+    color: aliceblue;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #385170;
+  }
+
+  .item3 {
+    font-family: 'Intrepid';
+    margin-top: 5vh;
+    font-size: 30px;
+    display: flex;
+  }
+
+  .div-form {
+    margin: 0 auto;
+  }
+
+  input {
+    padding: 0.313rem;
+    border: none;
+    border-radius: 0.25rem;
+  }
+
+  input[type=text], input[type=email] {
+    width: 31.25rem;
+    font-family: 'Intrepid';
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  input[type=number] {
+    font-family: 'Intrepid';
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  select {
+    width: 10.4rem;
+    padding: 0.313rem 0.313rem 0.313rem 0;
+    border-radius: 0.25rem;
+    font-family: 'Intrepid';
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  #telefone {
+    width: 10.4rem;
+  }
+
+  input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input:focus {
+    background-color: #bbe4e9;
+    -webkit-transition: 0.5s;
+  }
+
+  .botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+  }
+
+  input[type=submit] {
+    font-family: 'Intrepid';
+    background-color: #5585b5;
+    color: aliceblue;
+    font-size: 20px;
+    border: 2px solid #5585b5;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+  }
+
+  input[type=submit]:hover {
+    background-color: aliceblue;
+    color: #5585b5;
+    transition-duration: 0.4s;
+  }
+
+  label {
+    display: inline-block;
+    width: 8.75rem;
+    text-align: right;
+  }
+
+  .item4 {
+    padding-top: 10vh;
+    text-align: center;
+    font-family: 'Aileron';
+  }
+
+  .item4 > p {
+    font-size: 15px;
+  }
+  

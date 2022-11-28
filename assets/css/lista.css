@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Intrepid";
+    src: url(./../fonts/intrepid.ttf);
+  }
+  
+@font-face {
+    font-family: "Aileron";
+    src: url(./../fonts/aileron.regular.otf);
+}
+  
+.item1 { grid-area: 1 / 2 / 2 / 6; }
+.item2 { grid-area: 1 / 1 / 6 / 2; }
+.item3 { grid-area: 2 / 2 / 5 / 6; }
+.item4 { grid-area: 5 / 2 / 6 / 6; }
+  
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: aliceblue;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    height: 100vh;
+    }
+  
+    .item1 {
+        background-color: #385170;
+        border-bottom: 2px solid aliceblue;
+        height: 15vh;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Aileron';
+        font-size: 30px;
+    }
+  
+    .item2 {
+        padding: 5vh 0 0 0;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #2193b0;
+        font-family: 'Aileron';
+    }
+    
+    .menu {
+        padding: 0 0 5vh 0;
+        display: flex;
+        justify-content: center;
+    }
+  
+    .menu-icon {
+        width: 5vh;
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+  
+    .menu > h3 {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 1vh;
+    }
+  
+    .sign-up {
+        padding: 0 0 5vh 0;
+    }
+  
+    .sign-up-icon {
+        width: 7vh;
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+  
+    .list-icon {
+        width: 5vh;
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+  
+    a:link, a:visited {
+        color: aliceblue;
+        text-decoration: underline;
+    }
+  
+    a:hover {
+        color: #385170;
+    }
+  
+    .item3 {
+        font-family: 'Intrepid';
+        margin: 0 auto;
+    }
+
+    caption {
+        font-size: 30px;
+        margin: 0 0 5vh 0;
+    }
+
+    table {
+        min-width: 60vh;
+        margin: 0 3.125rem;
+    }
+
+    th {
+        background-color: #385170;
+        padding: 5px;
+        font-size: 25px;
+        font-weight: bold;
+        border: 2px solid aliceblue;
+    }
+
+    td {
+        padding: 2px;
+        font-size: 22px;
+        border: 2px solid aliceblue;
+        text-align: center;
+    }
+
+    .item4 {
+        padding-top: 10vh;
+        text-align: center;
+        font-family: 'Aileron';
+    }
+    
+    .item4 > p {
+        font-size: 15px;
+    }
+      

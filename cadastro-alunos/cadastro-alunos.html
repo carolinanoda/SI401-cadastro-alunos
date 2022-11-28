@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="./../assets/css/reset.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/css/cadastro-alunos.css">
+    <title>Cadastro de alunos</title>
+    <link rel="icon" type="image/x-icon" href="./../assets/images/favicon.png">
+    <script src="submit.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <div class="item1">Cadastro de Alunos</div>
+        <div class="item2">
+            <div class="menu">
+                <img src="./../assets/images/menu.png" alt="Icone de menu" class="menu-icon">
+                <h3>Menu</h3>
+            </div>
+            <div class="sign-up">
+                <img src="./../assets/images/sign-up.png" alt="Icone de cadastro" class="sign-up-icon">
+                <p>Cadastrar alunos</p>
+            </div>
+            <img src="./../assets/images/list.png" alt="Icone de lista" class="list-icon">
+            <p><a href="./../lista-alunos/lista-alunos.html">Lista de alunos por RA</a></p>
+        </div>
+        <div class="item3">
+            <div class="div-form">
+                <form method="post" id="form-user" class="form" onsubmit="return AddUser(event);">
+                    <div class="nome">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="ra-genero">
+                        <label for="ra">RA</label>
+                        <input type="number" id="ra" name="ra" required>     
+                        <label for="genero">Gênero</label>
+                        <select id="genero" name="genero">
+                            <option disabled selected value>Selecione uma opção</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="idade-telefone">
+                        <label for="idade">Idade</label>
+                        <input type="number" id="idade" name="idade">
+                        <label for="telefone">Telefone</label>
+                        <input type="number" id="telefone" name="telefone">
+                    </div>
+                    <div class="endereco">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" name="endereco">
+                    </div>
+                    <div class="email">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="botao">
+                        <input type="submit" value="Cadastrar" name="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="item4">
+            <p>Autor: Carolina Noda</p>
+            <p>Contato: <a href="mailto:c254187@dac.unicamp.br">c254187@dac.unicamp.br</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
